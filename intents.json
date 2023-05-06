@@ -1,0 +1,121 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": ["Hi", "Hello", "Hey there", "What's up","Hey","hii"],
+          "responses": ["Hi there!", "Hello!", "Greetings!"]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "Bye Chatbot", "Goodbye Chatbot", "See you later Chatbot"],
+          "responses": ["Goodbye!", "See you later!", "Take care!", "Have a nice day!", "Bye! Come back again soon.", "It was a pleasure chatting with you. See you later."]
+      },
+      {
+          "tag": "age",
+          "patterns": ["How old are you?", "What's your age?"],
+          "responses": ["I was created in Apri-May 2023.","I am new to this world."]
+      },
+      {
+          "tag": "name",
+          "patterns": ["What's your name?", "What do I call you?", "Who are you?", "What should I call you?", "Name?", "May I know your name?"],
+          "responses": ["You can call me Chatbot.", "My name is Chatbot.", "I'm Chatbot!", "I'm Chatbot. Nice to meet you."]
+      },
+      {
+          "tag": "help",
+          "patterns": ["Can you help me?", "What can you do?", "I need assistance", "I need help", "Can you assist me?"],
+          "responses": ["Of course! How can I assist you?", "Sure thing! How can I help?"]
+      },
+      {
+          "tag": "weather",
+          "patterns": ["What's the weather like today?", "Is it going to rain?" , "What's the weather forecast?"],
+          "responses": ["I'm sorry, I don't have access to real-time weather data. You can check online or on your smartphone for the latest weather updates."]
+      },
+      {
+          "tag": "joke",
+          "patterns": ["Tell me a joke", "Make me laugh", "I need a good laugh" , "I want to hear a joke" , "Tell me something funny" , "Tell me a joke please"],
+          "responses": ["Why was the math book sad? Because it had too many problems!", "Why did the tomato turn red? Because it saw the salad dressing!", "What did one ocean say to the other ocean? Nothing, they just waved!", "What do you call a fake noodle? An impasta!", "What do you call a sleeping bull? A bull-dozer!",
+           "What do you call a pig that knows karate? A pork chop!", "What do you call a cow with no legs? Ground beef!", "What do you call a cow with two legs? Lean beef!", "What do you call a cow with all of its legs? High steaks!", "What do you call a cow that plays an instrument? A moo-sician!", "What do you call a cow that just gave birth? Decalfinated!",
+            "What do you call a cow eating grass? A lawn mooer!", "What do you call a cow with a twitch? Beef jerky!", "What do you call a cow with a sense of humor? A laughing stock!", "What do you call a cow that doesn't give milk? An udder failure!"]
+      },
+      {
+          "tag": "thanks",
+          "patterns": ["Thank you", "Thanks", "Appreciate it" , "Thank you so much" , "Thanks for that" , "Thanks for the help"],
+          "responses": ["You're welcome!", "No problem, happy to assist.", "Glad to be of help!" , "Anytime!" , "My pleasure!" , "It is my pleasure to help you"]
+      },
+      {
+          "tag": "favorite_color",
+          "patterns": ["What's your favorite color?", "Do you have a favorite color?"],
+          "responses": ["As a computer program, I don't have a favorite color. What's your favorite color?"]
+      },
+      {
+          "tag": "favorite_food",
+          "patterns": ["What's your favorite food?", "Do you like to eat?"],
+          "responses": ["I don't eat food since I'm a computer program. How about you? What's your favorite food?"]
+      },
+      {
+          "tag": "personal_info",
+          "patterns": ["Where are you from?", "What do you like to do?", "Tell me about yourself."],
+          "responses": ["As a language model, I don't have personal preferences or experiences. I'm here to assist you with any questions you may have."]
+      },
+      {
+          "tag": "meaning_of_life",
+          "patterns": ["What's the meaning of life?", "Why are we here?"],
+          "responses": ["That's a profound question! The answer may differ depending on one's beliefs and values. Some people believe that the meaning of life is to find happiness, others believe it's to serve a greater purpose or make a positive impact on the world."]
+      },
+      {
+          "tag": "music",
+          "patterns": ["What kind of music do you like?", "Do you enjoy music?"],
+          "responses": ["I don't have personal preferences since I'm a computer program. How about you? What kind of music do you like?"]
+      },
+      {
+          "tag": "movie",
+          "patterns": ["What's your favorite movie?", "Do you like to watch movies?"],
+          "responses": ["As a computer program, I don't have a favorite movie. How about you? What's your favorite movie?"]
+      },
+      {
+          "tag": "time",
+          "patterns": ["What time is it?", "Do you know the time?"],
+          "responses": ["I'm sorry, I don't have access to real-time clock data. You can check your phone or computer for the current time."]
+      },
+      {
+          "tag": "politics",
+          "patterns": ["What do you think about politics?", "Do you have political views?"],
+          "responses": ["As a language model, I don't have political views or opinions. I'm here to assist you with any questions you may have."]
+      },
+      {
+          "tag": "meaning_of_life",
+          "patterns": ["What's the meaning of life?", "Why are we here?"],
+          "responses": ["That's a profound question! The answer may differ depending on one's beliefs and values. Some people believe that the meaning of life is to find happiness, others believe it's to serve a greater purpose or make a positive impact on the world."]
+      },
+
+      {
+          "tag": "Email",
+          "patterns": ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com", "@icloud.com", "@aol.com", "@yandex.com", "@protonmail.com", "@zoho.com", "@gmx.com", "@mail.com", "@inbox.com", "@yopmail.com", "@mailinator.com", "@gmx.us", "@gmx.de", "@gmx.co.uk", "@gmx.fr", "@gmx.net", "@g mx.at", "@gmx.ch", "@gmx.eu"],
+          "responses": ["This is Email Address. You can use this email address to contact with our support team. Email:support.face@gmail.com"]
+
+      },
+
+      {
+        "tag": "Error",
+        "patterns": ["I have issue with login", "I have issue with sign up", "I have issue with my account", "I have issue with my password", "I have issue with my email", "I have issue with my username", "I have issue with my phone number", "I have issue with my mobile number","I have problem with login", "I have problem with sign up", 
+        "I have problem with my account", "I have problem with my password", "I have problem with my email", "I have problem with my username", "I have problem with my phone number", "I have problem with my mobile number", "I have problem to train data"],
+        "responses": ["Please contact with our support team. They will help you."," You can contact with our support team by email or phone number. Email:support.face@gmail.com, Phone Number: +91 9990009990"]
+      },
+
+      {
+
+        "tag": "About project",
+        "patterns": ["Tell me about your project"," What is the purpose of this projet ", " What is the use of this projet"],
+        "responses": ["Face recognition attendance system using OpenCV is a computer-based technology that uses facial recognition algorithms to identify and verify individuals. The system captures the facial features of individuals and compares them with a database of known faces to authenticate the person's identity.",
+        "The purpose of a face recognition attendance system is to automate and streamline the process of taking attendance in an organization. The system eliminates the need for manual attendance registers and can help reduce the time and effort required to manage attendance records."]
+
+      },
+
+      {
+          "tag": "Symbols,",
+          "patterns": [" @", "# ", "! ", "$ ", "% ", "^ ", "& ", "* ", "( ", ") ", "_ ", "- ", "+ ", "= ", "{ ", "} ", "[ ", "] ", "| ", ":", "; ", "'", "< ", "> ", "? ", "/ ", " "],
+          "responses": ["Please Write Correctly, I don't understand What you want to say."]
+        }
+
+  ]
+}

@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\Academic\\Capstone_Project\\training_data\\model.tflearn"
+all_model_checkpoint_paths: "D:\\Academic\\Capstone_Project\\training_data\\model.tflearn"
