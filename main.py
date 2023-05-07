@@ -2,6 +2,7 @@ from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 import os
+import tkinter
 from studentdetails import StudentDetail
 from train import Train
 from face_recognition import Face_Recognition
@@ -140,10 +141,10 @@ class Face_Recognization_System:
         img11=img11.resize((210,210),Image.Resampling.LANCZOS)
         self.photoimg11=ImageTk.PhotoImage(img11)
 
-        b1=Button(bg_img,image=self.photoimg11,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg11,cursor="hand2",command=self.Exit_app)
         b1.place(x=1100,y=380,width=210,height=210)
 
-        b1_1=Button(bg_img,text="Exit",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1=Button(bg_img,text="Exit",cursor="hand2",command=self.Exit_app, font=("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=1100,y=580,width=210,height=40)
         
     def open_img(self):
@@ -177,6 +178,17 @@ class Face_Recognization_System:
 
     def chatbot(self):
         self.app=ChatApplication()
+
+    #=======================Exit button==========================
+
+    def Exit_app(self):
+        self.Exit_app=tkinter.messagebox.askyesno("Face Recognization System","Are you sure exit this project",parent=self.root)
+        if self.Exit_app>0:
+            self.root.destroy()
+        else:
+            return
+        
+
 
 
 
