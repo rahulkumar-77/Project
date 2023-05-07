@@ -1,0 +1,12 @@
+create database adminlogin;
+use adminlogin;
+create table loginDetails(
+username varchar(50) primary key,
+passwd varchar(100),
+phoneNumber varchar(14) unique);
+
+--password is 123456
+insert into loginDetails values("Rk","$2b$12$fWTIQJAtmbA2j5CjR20RYOYoeXB/mykQ09FxZO/0dVXtDYhcb3oAy","+9112321347");
+insert into loginDetails values("Rahul","$2b$12$fWTIQJAtmbA2j5CjR20RYOYoeXB/mykQ09FxZO/0dVXtDYhcb3oAy","+918993083511");
+
+select * from loginDetails;
