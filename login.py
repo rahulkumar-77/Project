@@ -16,7 +16,7 @@ class LoginPage:
         self.mydb = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="R",
+            password="Yadav@7311",
             database="adminlogin"
         )
 

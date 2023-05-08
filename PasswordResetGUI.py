@@ -15,7 +15,7 @@ class PasswordResetGUI:
         self.mydb = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Rakeshsharma77@",
+            password="Yadav@7311",
             database="adminlogin"
         )
 
