@@ -130,10 +130,10 @@ class Face_Recognization_System:
         img10=img10.resize((210,210),Image.Resampling.LANCZOS)
         self.photoimg10=ImageTk.PhotoImage(img10)
 
-        b1=Button(bg_img,image=self.photoimg10,cursor="hand2",)
+        b1=Button(bg_img,image=self.photoimg10,cursor="hand2",command=self.developer_button)
         b1.place(x=800,y=380,width=210,height=210)
 
-        b1_1=Button(bg_img,text="Developer",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1=Button(bg_img,text="Developer",cursor="hand2",command=self.developer_button,font=("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=800,y=580,width=210,height=40)
 
         #Exit button
@@ -183,8 +183,10 @@ class Face_Recognization_System:
 
     #=======================functionbuttom for developer window==========================
 
-    # def developer_button(self):
-    #     self.app=DeveloperPage(root)
+    def developer_button(self):
+        #self.app=DeveloperPage(self.root)
+        self.new_window=Toplevel(self.root)
+        self.app=DeveloperPage(self.new_window)
 
 
 
@@ -196,6 +198,8 @@ class Face_Recognization_System:
             self.root.destroy()
         else:
             return
+        
+
         
 
 if __name__ == "__main__":

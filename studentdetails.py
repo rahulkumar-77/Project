@@ -241,6 +241,9 @@ class StudentDetail:
         self.student_table.column("photo", width = 150)
 
         self.student_table.pack(fill = BOTH, expand = 1)
+        self.student_table.bind("<ButtonRelease>",self.get_cursor)
+        self.fetch_data()
+
         #========================================= store student data =================================== 
     def add_data(self):
         if self.var_dep.get()=="-Select-" or self.b_year.get()=="-Select-" or self.admi_session.get()=="-Select-":
@@ -267,6 +270,7 @@ class StudentDetail:
                     self.varb1.get()
                 ))
                 conn.commit()
+                self.fetch_data()
                 conn.close()
                 messagebox.showinfo("success","Student details has been added Successfully",parent=self.window)
             except Exception as es:
