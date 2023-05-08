@@ -82,24 +82,7 @@ class LoginPage:
         self.password_entry.bind('<FocusOut>', on_entry_leave2)
         self.password_entry.place(relx=0.5, rely=0.45, anchor=tk.CENTER)  # password_entry.place(x=210, y=230)
 
-        # Create the login function
-        def Newuser():
-            # get user input for username and password
-            username = input("Enter your username: ")
-            password = input("Enter your password: ")
-
-            # hash the password using bcrypt
-            hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-
-            # insert the username and hashed password into the database
-            cursor = self.mydb.cursor()
-            query = "INSERT INTO loginDetails (username, passwd) VALUES (%s, %s)"
-            values = (username, hashed_password.decode('utf-8'))
-            cursor.execute(query, values)
-            self.mydb.commit()
-
-            # confirm the password has been stored
-            print("Password stored successfully!")
+       
         def login():
             # Get the entered username and password
             username = self.username_entry.get()
