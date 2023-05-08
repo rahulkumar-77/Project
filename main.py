@@ -8,6 +8,7 @@ from train import Train
 from face_recognition import Face_Recognition
 from attendance import Attendence
 from app import ChatApplication
+from Developer import DeveloperPage
 
 class Face_Recognization_System:
     def __init__(self,root):
@@ -129,7 +130,7 @@ class Face_Recognization_System:
         img10=img10.resize((210,210),Image.Resampling.LANCZOS)
         self.photoimg10=ImageTk.PhotoImage(img10)
 
-        b1=Button(bg_img,image=self.photoimg10,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg10,cursor="hand2",)
         b1.place(x=800,y=380,width=210,height=210)
 
         b1_1=Button(bg_img,text="Developer",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
@@ -179,6 +180,14 @@ class Face_Recognization_System:
     def chatbot(self):
         self.app=ChatApplication()
 
+
+    #=======================functionbuttom for developer window==========================
+
+    # def developer_button(self):
+    #     self.app=DeveloperPage(root)
+
+
+
     #=======================Exit button==========================
 
     def Exit_app(self):
@@ -188,10 +197,6 @@ class Face_Recognization_System:
         else:
             return
         
-
-
-
-
 
 if __name__ == "__main__":
     root=Tk()
