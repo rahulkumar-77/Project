@@ -41,7 +41,7 @@ class Face_Recognization_System:
 
         #Baground image
 
-        img3=Image.open("college_images/wp2551980.jpg")
+        img3=Image.open("college_images/Lpu.png")
         img3=img3.resize((1530,710),Image.Resampling.LANCZOS)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
@@ -184,7 +184,6 @@ class Face_Recognization_System:
     #=======================functionbuttom for developer window==========================
 
     def developer_button(self):
-        #self.app=DeveloperPage(self.root)
         self.new_window=Toplevel(self.root)
         self.app=DeveloperPage(self.new_window)
 

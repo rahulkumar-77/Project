@@ -47,41 +47,19 @@
           "patterns": ["What's your favorite color?", "Do you have a favorite color?"],
           "responses": ["As a computer program, I don't have a favorite color. What's your favorite color?"]
       },
-      {
-          "tag": "favorite_food",
-          "patterns": ["What's your favorite food?", "Do you like to eat?"],
-          "responses": ["I don't eat food since I'm a computer program. How about you? What's your favorite food?"]
-      },
+      
       {
           "tag": "personal_info",
           "patterns": ["Where are you from?", "What do you like to do?", "Tell me about yourself."],
           "responses": ["As a language model, I don't have personal preferences or experiences. I'm here to assist you with any questions you may have."]
       },
-      {
-          "tag": "meaning_of_life",
-          "patterns": ["What's the meaning of life?", "Why are we here?"],
-          "responses": ["That's a profound question! The answer may differ depending on one's beliefs and values. Some people believe that the meaning of life is to find happiness, others believe it's to serve a greater purpose or make a positive impact on the world."]
-      },
-      {
-          "tag": "music",
-          "patterns": ["What kind of music do you like?", "Do you enjoy music?"],
-          "responses": ["I don't have personal preferences since I'm a computer program. How about you? What kind of music do you like?"]
-      },
-      {
-          "tag": "movie",
-          "patterns": ["What's your favorite movie?", "Do you like to watch movies?"],
-          "responses": ["As a computer program, I don't have a favorite movie. How about you? What's your favorite movie?"]
-      },
+
       {
           "tag": "time",
           "patterns": ["What time is it?", "Do you know the time?"],
           "responses": ["I'm sorry, I don't have access to real-time clock data. You can check your phone or computer for the current time."]
       },
-      {
-          "tag": "politics",
-          "patterns": ["What do you think about politics?", "Do you have political views?"],
-          "responses": ["As a language model, I don't have political views or opinions. I'm here to assist you with any questions you may have."]
-      },
+
       {
           "tag": "meaning_of_life",
           "patterns": ["What's the meaning of life?", "Why are we here?"],
@@ -97,25 +75,157 @@
 
       {
         "tag": "Error",
-        "patterns": ["I have issue with login", "I have issue with sign up", "I have issue with my account", "I have issue with my password", "I have issue with my email", "I have issue with my username", "I have issue with my phone number", "I have issue with my mobile number","I have problem with login", "I have problem with sign up", 
+        "patterns": ["I have issue with login","I have problem","I have issue", "I have issue with sign up", "I have issue with my account", "I have issue with my password", "I got error", "I have issue with my username", "I am not able to mark attendence", "I have issue with my mobile number","I have problem with login", "I got error on add data", 
         "I have problem with my account", "I have problem with my password", "I have problem with my email", "I have problem with my username", "I have problem with my phone number", "I have problem with my mobile number", "I have problem to train data"],
-        "responses": ["Please contact with our support team. They will help you."," You can contact with our support team by email or phone number. Email:support.face@gmail.com, Phone Number: +91 9990009990"]
+        "responses": ["Please contact with our support team. They will help you. You can contact with our support team by email or phone number. Email:support.face@gmail.com, Phone Number: +91 9990009990"]
       },
 
       {
 
         "tag": "About project",
-        "patterns": ["Tell me about your project"," What is the purpose of this projet ", " What is the use of this projet"],
+        "patterns": ["Tell me about your project?"," What is the purpose of this projet? ", " What is the use of this projet?"],
         "responses": ["Face recognition attendance system using OpenCV is a computer-based technology that uses facial recognition algorithms to identify and verify individuals. The system captures the facial features of individuals and compares them with a database of known faces to authenticate the person's identity.",
         "The purpose of a face recognition attendance system is to automate and streamline the process of taking attendance in an organization. The system eliminates the need for manual attendance registers and can help reduce the time and effort required to manage attendance records."]
 
       },
+      {
+
+        "tag": "project Work",
+        "patterns": ["How your Project works?","What is working of your Project", " How your Project works", " What is working of your Project"],
+        "responses": ["The system captures the facial features of individuals and compares them with a database of known faces to authenticate the person's identity. The system then marks the attendance of the individual and stores the attendance record in a database. The system can also be used to generate reports and analytics on attendance data."]
+
+      },
+
+        {
+
+        "tag": "App requirements",
+        "patterns": ["What are the requirements to use your face recognition attendance app?", "What devices are compatible with your app?", "Do I need a special camera to use your app?"],
+        "responses": ["Our face recognition attendance app requires a device with a camera, preferably with a high-resolution camera for better accuracy. The app is compatible with both Android and iOS devices. Additionally, a stable internet connection is required to sync attendance data to the cloud-based server."]
+    
+      },
 
       {
-          "tag": "Symbols,",
-          "patterns": [" @", "# ", "! ", "$ ", "% ", "^ ", "& ", "* ", "( ", ") ", "_ ", "- ", "+ ", "= ", "{ ", "} ", "[ ", "] ", "| ", ":", "; ", "'", "< ", "> ", "? ", "/ ", " "],
-          "responses": ["Please Write Correctly, I don't understand What you want to say."]
-        }
+    
+        "tag": "Customization",
+        "patterns": ["Can the face recognition attendance system be customized for our organization?", "Can we add our own database of faces to the system?", "Can we customize the system's reports and analytics?"],
+        "responses": ["Yes, our face recognition attendance system is highly customizable and can be tailored to the specific needs of your organization. We can work with you to integrate your own database of faces into the system and customize the reports and analytics to meet your requirements."]
+    
+      },
+      {
+    
+        "tag": "Training",
+        "patterns": ["How can we train the face recognition attendance system to recognize new faces?", "Is it possible to retrain the system for better accuracy?", "Do we need technical expertise to train the system?"],
+        "responses": ["Our face recognition attendance system uses machine learning algorithms to continuously improve its accuracy over time. To add new faces to the system, you can simply upload images of the new faces and the system will automatically update its database. The system can also be retrained periodically to improve its accuracy. No technical expertise is required to train the system as it has a user-friendly interface."]
+        
+      },
+      {
+    
+        "tag": "Cost",
+        "patterns": ["How much does your face recognition attendance system cost?", "What is the pricing model for your system?", "Is there a monthly subscription fee?","What is Cost Of your project?","Price of your project?", "What is the pricing model for your project?", "Is there a monthly subscription fee for your project?","How much you charge for your project?"],
+        "responses": ["The cost of our face recognition attendance system depends on the number of users and the features required. We offer flexible pricing plans to suit the needs of different organizations. There is no monthly subscription fee for our system."]
+      },
 
-  ]
+      {
+        "tag": "System Integration",
+        "patterns": ["Can your face recognition attendance system integrate with our existing HR management system?", "Is it possible to export attendance data to other software?", "Can your system work with our existing access control system?"],
+        "responses": ["Yes, our face recognition attendance system is designed to be highly compatible and can be integrated with your existing HR management system. Attendance data can be exported to other software using standard file formats such as CSV or Excel. Additionally, our system can work with most access control systems."]
+      },
+    
+      {
+        "tag": "Accuracy",
+        "patterns": ["How accurate is your face recognition attendance system?", "What is the error rate of the system?", "Can the system differentiate between identical twins?"],
+        "responses": ["Our face recognition attendance system uses state-of-the-art algorithms that have a high accuracy rate. The error rate of the system is typically less than 1%. While the system can differentiate between most identical twins, there may be cases where it is not possible due to the high degree of facial similarity."]
+      },
+    
+      {
+        "tag": "Training Data",
+        "patterns": ["Where does the system get its training data from?", "Is the training data ethically sourced?", "How diverse is the training data?"],
+        "responses": ["Our face recognition attendance system is trained using a diverse dataset of faces from a variety of sources. We ensure that the training data is ethically sourced and conforms to all relevant data protection laws and regulations. The training data includes a diverse range of faces to ensure that the system is accurate for people of all races, genders, and ages."]
+      },
+
+      {
+        "tag": "Data Privacy",
+        "patterns": ["How does your face recognition attendance system protect user data?", "What measures are in place to ensure data privacy?", "Do you comply with data protection laws and regulations?"],
+        "responses": ["We take data privacy very seriously and have implemented multiple measures to ensure the security of user data. Our system uses encryption to protect sensitive information and access controls to limit who can access the data. We also comply with all relevant data protection laws and regulations to ensure that user data is handled in a responsible and ethical manner."]
+      },
+
+      {
+        "tag": "Scalability",
+        "patterns": ["Can your face recognition attendance system handle large volumes of users?", "Is the system scalable?", "What happens if the number of users increases?"],
+        "responses": ["Our face recognition attendance system is highly scalable and can handle large volumes of users with ease. As the number of users increases, we can add additional resources to ensure that the system remains fast and reliable. Additionally, our system is designed to be easily scalable, so you can expand your usage as your organization grows."]
+      },
+
+      {
+        "tag": "User Experience",
+        "patterns": ["Is your face recognition attendance system easy to use?", "What is the user experience like?", "Do you offer training for end-users?"],
+        "responses": ["Our face recognition attendance system is designed to be user-friendly and easy to use. The user interface is intuitive and straightforward, and we offer training for end-users to ensure that everyone can use the system effectively. Additionally, we continually update the system to improve the user experience and add new features."]
+      },
+    
+      {
+        "tag": "Support",
+        "patterns": ["What kind of support do you offer?", "Is technical support available?", "Do you offer training and onboarding support?"],
+        "responses": ["We offer comprehensive support for our face recognition attendance system, including technical support and training and onboarding support. Our team of experts is always available to help you with any issues or questions you may have."]
+      },
+      {
+        "tag": "attendance-status",
+        "patterns": ["Attendance status", "How is the attendance", "Did everyone mark attendance"],
+        "responses": ["The attendance for today is 80%. Some students have not marked their attendance yet.", "Attendance for today is 90%. Only a few students are missing.", "The attendance is currently at 100%. Everyone has marked their attendance."],
+        "context_set": "attendance"
+      },
+      {
+        "tag": "attendance",
+        "patterns": ["Take attendance", "Mark attendance", "Attendance"],
+        "responses": ["Sure, let me check the face recognition database.", "Alright, let me access the attendance system.", "Let me open the attendance system for you."],
+        "context_set": "attendance"
+      },
+      {
+        "tag": "name",
+        "patterns": ["My name is", "I am called", "This is"],
+        "responses": ["Nice to meet you!", "Hello {name}, how can I assist you?", "Great, {name}! How can I help you?"],
+        "context_set": ""
+      },
+      {
+        "tag": "enroll_student",
+        "patterns": [
+          "I want to enroll a new student",
+          "Enroll a new student",
+          "Add a new student",
+          "Register a new student"
+        ],
+        "responses": [
+          "Great, let's enroll a new student! Please provide the student's name and photo for identification.",
+          "Sure thing, let's enroll a new student. Please provide the student's name and photo for identification.",
+          "Certainly, let's add a new student to the system. Please provide the student's name and photo for identification."
+        ]
+         },
+        {
+        "tag": "take_attendance",
+        "patterns": [
+          "Take attendance",
+          "Record attendance",
+          "Mark attendance"
+        ],
+        "responses": [
+          "Okay, let's take attendance. Please provide a photo of the class for identification.",
+          "Sure thing, let's record attendance. Please provide a photo of the class for identification.",
+          "Let's mark attendance. Please provide a photo of the class for identification."
+        ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [
+              ""
+            ],
+            "responses": [
+              "I'm sorry, I didn't understand that. Could you please rephrase?",
+              "I'm not sure what you mean. Could you please provide more information?",
+              "I'm not programmed to understand that. Could you please ask me something else?",
+              "I didn't catch that. Could you please repeat what you said?",
+              "I'm sorry, I didn't quite get that. Could you please say that again?"
+            ]
+          }
+
+
+    ]
+
 }

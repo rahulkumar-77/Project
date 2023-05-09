@@ -28,8 +28,8 @@ def bag_of_words(tokenized_sentence, words):
     return bag of words array:
     1 for each known word that exists in the sentence, 0 otherwise
     example:
-    sentence = ["hello", "how", "are", "you"]
-    words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
+    sentence = ["hello", "how", "are", "you","What","is","Your","Project","Explain","me","about","help","Name","what","is","your","name","who","are","you","who","made","you","who","is","your","creator","who","is"]
+    words = ["hi", "hello", "I", "you", "bye", "thank", "cool","how","are","project","Explain","me","about","your","Cost","Problem","Help","Training","Cost","Privacy","Scalability","Experience","Support","Cost","Accuracy","Customization","who","is","your","creator","who","Training"]
     bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
     # stem each word
