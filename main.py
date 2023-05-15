@@ -3,6 +3,7 @@ from tkinter import ttk
 from PIL import Image,ImageTk
 import os
 import tkinter
+import datetime
 from studentdetails import StudentDetail
 from train import Train
 from face_recognition import Face_Recognition
@@ -50,6 +51,17 @@ class Face_Recognization_System:
 
         title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE SYSTEM",font=("times new roman",35,"bold"),bg="white",fg="red")
         title_lbl.place(x=0,y=0,width=1530,height=45)
+
+        #================Time=================
+        def time():
+            string = datetime.datetime.now().strftime("%H:%M:%S")
+            lbl.config(text=string)
+            lbl.after(1000, time)
+
+        lbl = Label(title_lbl, font=("times new roman", 14, "bold"), background="white", foreground="blue")
+        lbl.place(x=0, y=0, width=110, height=50)
+        time()
+
 
         #Student button
 
@@ -205,5 +217,5 @@ if __name__ == "__main__":
     root=Tk()
     obj=Face_Recognization_System(root)
     root.mainloop()
-    
+
     
