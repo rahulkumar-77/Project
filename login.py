@@ -103,7 +103,7 @@ class LoginPage:
                 failure_label.place(relx=0.5, rely=0.85, anchor=tk.CENTER)
             else:
                 # compare the hashed password with the user-entered password
-                print(result)
+              
                 hashed_password = result[0][1].encode('utf-8')
                 if bcrypt.checkpw(password.encode('utf-8'), hashed_password):
 
